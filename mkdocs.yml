@@ -1,4 +1,4 @@
-site_name: Create Your Future
+site_name: Mason's Site
 site_url: https://masont8198.github.io/Personal-Site/
 site_author: "Mason A. Thompson"
 copyright: Copyright &copy; 2023-2024 Mason A. Thompson
@@ -34,9 +34,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.highlight
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: True
+    - anchor_linenums: true
+    - line_spans: __span
+    - pygments_lang_class: True
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets
