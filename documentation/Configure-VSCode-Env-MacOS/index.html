@@ -1,0 +1,806 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Mason A. Thompson">
+      
+      
+        <link rel="canonical" href="https://masont8198.github.io/Personal-Site/documentation/Configure-VSCode-Env-MacOS/">
+      
+      
+      
+        <link rel="next" href="../Resources-and-Attributions/">
+      
+      
+      <link rel="icon" href="../../assets/site-assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Configuring your VSCode Environment on MacOS - Mason's Site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gulzar:300,300i,400,400i,700,700i%7CGulzar:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Gulzar";--md-code-font:"Gulzar"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-configure-your-vscode-environment-for-c-on-macos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://masont8198.github.io/Personal-Site/" title="Mason&#39;s Site" class="md-header__button md-logo" aria-label="Mason's Site" data-md-component="logo">
+      
+  <img src="../../assets/site-assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mason's Site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configuring your VSCode Environment on MacOS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://masont8198.github.io/Personal-Site/" title="Mason&#39;s Site" class="md-nav__button md-logo" aria-label="Mason's Site" data-md-component="logo">
+      
+  <img src="../../assets/site-assets/favicon.png" alt="logo">
+
+    </a>
+    Mason's Site
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://masont8198.github.io/Personal-Site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuring your VSCode Environment on MacOS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Configuring your VSCode Environment on MacOS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-vsc-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing VSC (Visual Studio Code)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Homebrew
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-cmake" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing CMake
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing OpenCV
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-c-test-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create C++ Test Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-your-test-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building your Test Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executing-your-test-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executing your Test Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring VSCode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-your-c-debugger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring your C++ Debugger
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Extras
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Extras
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/MasonT8198" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resources-and-Attributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources and Attributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-vsc-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing VSC (Visual Studio Code)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Homebrew
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-cmake" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing CMake
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing OpenCV
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-c-test-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create C++ Test Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-your-test-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building your Test Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executing-your-test-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executing your Test Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring VSCode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-your-c-debugger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring your C++ Debugger
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="how-to-configure-your-vscode-environment-for-c-on-macos">How to Configure your VSCode Environment for C++ on MacOS</h1>
+<details class="warning" open="open">
+<summary>Command Line Required</summary>
+<p>The requirements for setting up a proper VSCode C++ configuration on MacOS for CS use will require you to install a few packages and dependencies, which can only be done with the command shell.However, most of the code below can be copy and pasted into the shell!</p>
+</details>
+<p>This is a tutorial on setting up your environment on VSCode for C++ on the MacOS platform, the version this was tested on is Monterey Version 12.4, and this guide doesn't require you to download the XCode Application as you don't really need it for your development workflow. Command Line Tools and Homebrew are required.</p>
+<h2 id="installing-vsc-visual-studio-code">Installing VSC (Visual Studio Code)</h2>
+<p>The first step is to go ahead and install Visual Studio Code, for their site, linked <a href="https://code.visualstudio.com/">here</a></p>
+<h2 id="installing-homebrew">Installing Homebrew</h2>
+<p>The next step is to install Homebrew and Command Line Tools, you can install the both of them using these two commands.</p>
+<div class="highlight"><span class="filename">Installing Homebrew and CLI-Tools</span><pre><span></span><code>xcode-select<span class="w"> </span>–install
+/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="s2">"</span>
+</code></pre></div>
+<p>Now, we can start configuring our VSCode Environment!</p>
+<h2 id="installing-cmake">Installing CMake</h2>
+<p>CMake can both be installed from its official website as a Graphical application or with Homebrew, for the purposes of this guide we will be working in the shell the majority of the time</p>
+<div class="highlight"><span class="filename">Installing CMake</span><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>cmake<span class="w"> </span>ninja
+</code></pre></div>
+<h2 id="installing-opencv">Installing OpenCV</h2>
+<p>Next we will have to install OpenCV using these two commands</p>
+<div class="highlight"><span class="filename">Installing OpenCV and pkg-config</span><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>opencv
+brew<span class="w"> </span>install<span class="w"> </span>pkg-config
+</code></pre></div>
+<h2 id="create-c-test-project">Create C++ Test Project</h2>
+<p>We need to test our install by creating a project. The step we first would need to do is create the working directory, you can do this via your file explorer (finder) or via the command line like so</p>
+<div class="highlight"><span class="filename">Create Test Directory</span><pre><span></span><code>mkdir<span class="w"> </span><span class="nb">test</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="nb">test</span>
+</code></pre></div>
+<p>Next, create your <code>main.cpp</code> file for testing in Visual Studio Code, or in the shell and write a basic hello world program.</p>
+<div class="highlight"><span class="filename">main.cpp</span><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Hello World!"</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>After that, create your <code>CMakeLists.txt</code> file.</p>
+<div class="highlight"><span class="filename">CMakeLists.txt</span><pre><span></span><code># This the cmake version that my machine currently installed
+cmake_minimum_required(VERSION "3.23")
+
+# name of this example project
+project(test)
+
+# set OpenCV_DIR variable equal to the path to the cmake
+# files within the previously installed opencv program
+# you should check the path with your computer
+set(OpenCV_DIR /opt/homebrew/Cellar/opencv/4.5.5_2/include/opencv4)
+
+# Tell compiler to use C++ 14 features which is needed because
+# Clang version is often behind in the XCode installation
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_OSX_DEPLOYMENT_TARGET 13.0)
+
+# configure the necessary common CMake environment variables
+# needed to include and link the OpenCV program into this
+# demo project, namely OpenCV_INCLUDE_DIRS and OpenCV_LIBS
+find_package( OpenCV REQUIRED )
+
+# tell the build to include the headers from OpenCV
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+
+# specify the executable target to be built
+add_executable(test main.cpp)
+
+# tell it to link the executable target against OpenCV
+target_link_libraries(test ${OpenCV_LIBS} )
+</code></pre></div>
+<h2 id="building-your-test-project">Building your Test Project</h2>
+<p>Create a directory for the compiling of your test project and build your C++ file as shown below.</p>
+<div class="highlight"><span class="filename">Building your Project</span><pre><span></span><code>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+cmake<span class="w"> </span>..
+make
+</code></pre></div>
+<h2 id="executing-your-test-project">Executing your Test Project</h2>
+<p>Launch your test project</p>
+<div class="highlight"><span class="filename">Execute your Project</span><pre><span></span><code>./test
+</code></pre></div>
+<p>It should say hello world. If so, then you're good to move on!</p>
+<h2 id="configuring-vscode">Configuring VSCode</h2>
+<p>Install the extension packages for C++ by going to the extensions tab and search for <code>C/C++ Extension Pack</code></p>
+<figure>
+<p><img alt="Extension Example" src="../page-assets/image1.png" width="500"></p>
+</figure>
+<p>Next, we need add the C++ include path in our configuration file located at <code>.vscode/ c_cpp_properties.json</code> In this case there are 2</p>
+<ul>
+<li>Paths of your C++ Library</li>
+<li>Paths of your OpenCV Library</li>
+</ul>
+<p><code>/usr/local/Cellar/opencv/4.5.5_2/include/opencv4</code></p>
+<p>This location can be obtained by typing the following command in your terminal which uses GCC</p>
+<div class="highlight"><span class="filename">Find your output directory</span><pre><span></span><code>gcc<span class="w"> </span>-v<span class="w"> </span>-E<span class="w"> </span>-x<span class="w"> </span>c++<span class="w"> </span>-
+</code></pre></div>
+<p>Which should give an output with the respective directories that we need to add in our extension settings.</p>
+<p>Your <code>.vscode/c_cpp_properties.json</code> file will look something like this</p>
+<div class="highlight"><span class="filename">c_cpp_properties.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mac"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">"${workspaceFolder}/**"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/usr/local/include"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/Library/Developer/CommandLineTools/usr/include"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"/usr/local/Cellar/opencv/4.5.5_2/include/opencv4"</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">"defines"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">            </span><span class="nt">"macFrameworkPath"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">            </span><span class="nt">"compilerPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/usr/local/bin/gcc-11"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"cStandard"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gnu17"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"cppStandard"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gnu++17"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"intelliSenseMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"macos-gcc-x64"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"configurationProvider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ms-vscode.cmake-tools"</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="configuring-your-c-debugger">Configuring your C++ Debugger</h2>
+<p>Finally, lets configure our C++ Debugger, you will need this to launch your debugger view on VSCode</p>
+<p>This will require <code>.vscode/launch.json</code> to work</p>
+<p></p><div class="highlight"><span class="filename">launch.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2.0"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(lldb) Debugger"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cppdbg"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"request"</span><span class="p">:</span><span class="w"> </span><span class="s2">"launch"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"program"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/build/demo"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"test.jpg"</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">"stopAtEntry"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"cwd"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"environment"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">            </span><span class="nt">"externalConsole"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"MIMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lldb"</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+We can open up the debugger view from the VSCode sidebar. And it will run as follows:
+<figure>
+<p><img alt="Debugger Example" src="../page-assets/image2.png" width="600"></p>
+</figure>
+<p>More information regarding your debugging configurations are located on the <a href="https://code.visualstudio.com/docs/cpp/config-clang-mac#_customize-debugging-with-launchjson">VSCode Documentation Site</a></p>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/8CJXB4Nu1wo?si=GMJEtY9agBxs-1bi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023-2024 Mason A. Thompson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/MasonT8198" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:math250@uky.edu" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.instant", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
