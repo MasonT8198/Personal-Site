@@ -108,7 +108,7 @@ It should say hello world. If so, then you're good to move on!
 Install the extension packages for C++ by going to the extensions tab and search for `C/C++ Extension Pack`
 
 <figure markdown>
-  ![Extension Example](page-assets/image1.png){ width="300" }
+  ![Extension Example](page-assets/image1.png){ width="500" }
 </figure>
 
 Next, we need add the C++ include path in our configuration file located at `.vscode/ c_cpp_properties.json` In this case there are 2
@@ -183,7 +183,7 @@ This will require `.vscode/launch.json` to work
 We can open up the debugger view from the VSCode sidebar. And it will run as follows:
 
 <figure markdown>
-  ![Debugger Example](page-assets/image2.png){ width="300" }
+  ![Debugger Example](page-assets/image2.png){ width="600" }
 </figure>
 
 More information regarding your debugging configurations are located on the [VSCode Documentation Site](https://code.visualstudio.com/docs/cpp/config-clang-mac#_customize-debugging-with-launchjson)
