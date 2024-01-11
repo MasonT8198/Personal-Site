@@ -15,7 +15,6 @@ theme:
     - navigation.sections
     - navigation.instant
     - content.code.copy
-    
   include_search_page: false
   search_index_only: true
   logo: assets/site-assets/favicon.png
@@ -51,10 +50,7 @@ plugins:
 nav:
   - Home: https://masont8198.github.io/Personal-Site/
   - Documentation:
-    - Has My Vision Changed?: documentation/My-Essay.md
-    - How Can I Succeed?: documentation/My-Major-Consideration.md
-    - What being a Successful Engineer Means to Me: documentation/Successful-Engineer.md
-    - What's my Roadmap?: documentation/My-Roadmap.md
+    - Configuring your VSCode Environment on MacOS: documentation/Configure-VSCode-Env-MacOS.md
   - Extras:
     - Github: https://github.com/MasonT8198
     - Resources and Attributions: documentation/Resources-and-Attributions.md
