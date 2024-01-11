@@ -1,0 +1,60 @@
+site_name: Create Your Future
+site_url: https://masont8198.github.io/Personal-Site/
+site_author: "Mason A. Thompson"
+copyright: Copyright &copy; 2023-2024 Mason A. Thompson
+
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  font: 
+    text: Gulzar
+    code: Gulzar
+  features:
+    - navigation.sections
+    - navigation.instant
+    - content.code.copy
+    
+  include_search_page: false
+  search_index_only: true
+  logo: assets/site-assets/favicon.png
+  favicon: assets/site-assets/favicon.png
+
+extra:
+  # Home URL, Social Blade
+  homepage: https://masont8198.github.io/Personal-Site/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MasonT8198
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:math250@uky.edu
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: True
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+
+plugins:
+  - mkdocs-video:
+      is_video: True
+      video_autoplay: True
+
+nav:
+  - Home: https://masont8198.github.io/Personal-Site/
+  - Documentation:
+    - Has My Vision Changed?: documentation/My-Essay.md
+    - How Can I Succeed?: documentation/My-Major-Consideration.md
+    - What being a Successful Engineer Means to Me: documentation/Successful-Engineer.md
+    - What's my Roadmap?: documentation/My-Roadmap.md
+  - Extras:
+    - Github: https://github.com/MasonT8198
+    - Resources and Attributions: documentation/Resources-and-Attributions.md
